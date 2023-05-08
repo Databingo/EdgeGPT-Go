@@ -1,8 +1,8 @@
 package GRPC
 
 import (
-	"github.com/pavel-one/EdgeGPT-Go"
-	pb "github.com/pavel-one/EdgeGPT-Go/pkg/GRPC/GPT"
+	"github.com/Databingo/EdgeGPT-Go"
+	pb "github.com/Databingo/EdgeGPT-Go/pkg/GRPC/GPT"
 	"google.golang.org/protobuf/types/known/structpb"
 	"log"
 	"time"

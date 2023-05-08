@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 	"github.com/google/uuid"
-	"github.com/pavel-one/EdgeGPT-Go/internal/Helpers"
+	"github.com/Databingo/EdgeGPT-Go/internal/Helpers"
 	"net/url"
 	"os"
 	"time"

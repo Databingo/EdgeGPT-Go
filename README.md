@@ -1,8 +1,8 @@
 ## 🪄 EdgeGPT-Go
 
-![Go version](https://img.shields.io/github/go-mod/go-version/pavel-one/EdgeGPT-GO)
-[![Release](https://img.shields.io/github/v/release/pavel-one/EdgeGPT-GO)](https://github.com/pavel-one/EdgeGPT-Go/releases)
-[![Go Reference](https://pkg.go.dev/badge/github.com/pavel-one/EdgeGPT-Go.svg)](https://pkg.go.dev/github.com/pavel-one/EdgeGPT-Go)
+![Go version](https://img.shields.io/github/go-mod/go-version/Databingo/EdgeGPT-GO)
+[![Release](https://img.shields.io/github/v/release/Databingo/EdgeGPT-GO)](https://github.com/Databingo/EdgeGPT-Go/releases)
+[![Go Reference](https://pkg.go.dev/badge/github.com/Databingo/EdgeGPT-Go.svg)](https://pkg.go.dev/github.com/Databingo/EdgeGPT-Go)
 
 <p align="center">
   <img src="./docs/preview.gif" alt="EdgeGPT-GO preview"/>
@@ -38,22 +38,22 @@ If you have several accounts - repeat for each of them and save to the `cookies`
 ### Use as a chat cli app
 
 ```shell
-docker run -it -v ./cookies:/app/cookies ghcr.io/pavel-one/edgegpt-chat
+docker run -it -v ./cookies:/app/cookies ghcr.io/Databingo/edgegpt-chat
 ```
 
-Or download binary in [release page](https://github.com/pavel-one/EdgeGPT-Go/releases)
+Or download binary in [release page](https://github.com/Databingo/EdgeGPT-Go/releases)
 
 ### Use as a library
 
 ```shell
-go get github.com/pavel-one/EdgeGPT-Go
+go get github.com/Databingo/EdgeGPT-Go
 ```
 
 ```go
 package main
 
 import (
-	"github.com/pavel-one/EdgeGPT-Go"
+	"github.com/Databingo/EdgeGPT-Go"
 	"log"
 )
 
@@ -95,7 +95,7 @@ func main() {
 ### Use as a docker microservice
 
 ```shell
-docker run -v ./cookies:/app/cookies -p 8080:8080 ghcr.io/pavel-one/edgegpt-grpc:latest
+docker run -v ./cookies:/app/cookies -p 8080:8080 ghcr.io/Databingo/edgegpt-grpc:latest
 ```
 
 ### Use as a docker-compose
@@ -104,7 +104,7 @@ docker run -v ./cookies:/app/cookies -p 8080:8080 ghcr.io/pavel-one/edgegpt-grpc
 version: "3"
 services:
   gpt:
-    image: ghcr.io/pavel-one/edgegpt-grpc:latest
+    image: ghcr.io/Databingo/edgegpt-grpc:latest
     restart: unless-stopped
     ports:
       - "8080:8080"
@@ -141,7 +141,7 @@ CONVERSATION_ENDPOINT=https://edge.churchless.tech/edgesvc/turing/conversation/c
 Example:
 
 ```shell
-docker run -e CONVERSATION_ENDPOINT=https://edge.churchless.tech/edgesvc/turing/conversation/create -v ./cookies:/app/cookies -p 8080:8080 ghcr.io/pavel-one/edgegpt-grpc:latest
+docker run -e CONVERSATION_ENDPOINT=https://edge.churchless.tech/edgesvc/turing/conversation/create -v ./cookies:/app/cookies -p 8080:8080 ghcr.io/Databingo/edgegpt-grpc:latest
 ```
 
 Or docker-compose:
@@ -150,7 +150,7 @@ Or docker-compose:
 version: "3"
 services:
   gpt:
-    image: ghcr.io/pavel-one/edgegpt-grpc:latest
+    image: ghcr.io/Databingo/edgegpt-grpc:latest
     restart: unless-stopped
     environment:
       - CONVERSATION_ENDPOINT=https://edge.churchless.tech/edgesvc/turing/conversation/create

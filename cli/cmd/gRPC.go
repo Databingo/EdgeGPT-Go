@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/pavel-one/EdgeGPT-Go/internal/GRPC"
-	pb "github.com/pavel-one/EdgeGPT-Go/pkg/GRPC/GPT"
+	"github.com/Databingo/EdgeGPT-Go/internal/GRPC"
+	pb "github.com/Databingo/EdgeGPT-Go/pkg/GRPC/GPT"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 	"net"

@@ -3,7 +3,7 @@ package CookieManager
 import (
 	"encoding/json"
 	"github.com/gabriel-vasile/mimetype"
-	"github.com/pavel-one/EdgeGPT-Go/internal/Logger"
+	"github.com/Databingo/EdgeGPT-Go/internal/Logger"
 	"io"
 	"os"
 )

@@ -1,7 +1,7 @@
 package Logger
 
 import (
-	"github.com/pavel-one/EdgeGPT-Go/internal/Helpers"
+	"github.com/Databingo/EdgeGPT-Go/internal/Helpers"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
@@ -27,6 +27,7 @@ func NewLogger(channel string) *zap.SugaredLogger {
 }
 
 func getLevel() zap.AtomicLevel {
+	os.Setenv("LOG_LEVEL", "ERROR")
 	level := os.Getenv("LOG_LEVEL")
 	if level == "" {
 		l, err := zapcore.ParseLevel("INFO")

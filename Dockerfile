@@ -1,6 +1,6 @@
 FROM golang:1.20-alpine as builder
 
-LABEL org.opencontainers.image.source=https://github.com/pavel-one/EdgeGPT-Go
+LABEL org.opencontainers.image.source=https://github.com/Databingo/EdgeGPT-Go
 
 WORKDIR /app
 
